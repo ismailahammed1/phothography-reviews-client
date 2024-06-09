@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-white  h-96 max-w-[120rem] mx-auto flex justify-center flex-col lg:flex-row">
+    <div className="bg-slate-400  h-96 max-w-[120rem] mx-auto flex justify-center flex-col lg:flex-row">
       <div className=" lg:w-[700px] lg:mt-20 mt-0 lg:text-5xl font-bold mx-0 text-2xl">
         {" "}
         <h1 className="lg:ml-64 ml-20">About Us Jacobson!</h1>

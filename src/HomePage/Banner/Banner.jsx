@@ -87,10 +87,10 @@ function Banner() {
             <AnimatePresence>
               {isVisible && (
                 <motion.div
-                  initial={{ x: "100%" }}
+                  initial={{ x: "200%" }}
                   animate={{ x: 0 }}
                   exit={{ x: "-100%" }}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 0.8 }}
                   className="transition-box"
                 >
                   <h1 className="lg:text-7xl md:text-3xl text-xl ">HI,</h1>
@@ -100,10 +100,10 @@ function Banner() {
             <AnimatePresence>
               {isVisible && (
                 <motion.div
-                  initial={{ x: "100%", opacity: 0 }}
+                  initial={{ x: "200%", opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   exit={{ x: "-100%", opacity: 0 }}
-                  transition={{ duration: 0.5, delay: 0.5 }}
+                  transition={{ duration: 0.8, delay: 0.5}}
                   className="transition-box"
                 >
                   <h1 className="lg:text-7xl md:text-4xl text-xl ">I’m Jacobson!</h1>

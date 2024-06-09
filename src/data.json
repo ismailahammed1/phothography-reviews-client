@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Emily Johnson",
+    "profession": "Wedding Photographer",
+    "image_url": "/assets/Profile1.png"
+  },
+  {
+    "name": "Michael Smith",
+    "profession": "Wildlife Photographer",
+    "image_url": "/assets/Profile2.png"
+  },
+  {
+    "name": "Sophia Lee",
+    "profession": "Portrait Photographer",
+    "image_url": "/assets/Profile3.png"
+  },
+  {
+    "name": "Daniel Brown",
+    "profession": "Fashion Photographer",
+    "image_url": "/assets/Profile4.png"
+  },
+  {
+    "name": "Olivia Garcia",
+    "profession": "Sports Photographer",
+    "image_url": "/assets/Profile5.png"
+  },
+  {
+    "name": "James Wilson",
+    "profession": "Travel Photographer",
+    "image_url": "/assets/Profile6.png"
+  },
+  {
+    "name": "Isabella Martinez",
+    "profession": "Architectural Photographer",
+    "image_url": "/assets/Profile7.png"
+  },
+  {
+    "name": "William Anderson",
+    "profession": "Food Photographer",
+    "image_url": "/assets/Profile8.png"
+  },
+  {
+    "name": "Ava Thomas",
+    "profession": "Nature Photographer",
+    "image_url": "/assets/Profile9.png"
+  },
+  {
+    "name": "Lucas Taylor",
+    "profession": "Event Photographer",
+    "image_url": "/assets/Profile10.png"
+  }
+]
