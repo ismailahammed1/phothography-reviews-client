@@ -12,7 +12,7 @@ const ImageSlider = () => {
         <motion.div
           className="inner-carousel flex "
           drag="x"
-          dragConstraints={{ right: 0, left: -2600 }} // Adjust as necessary
+          dragConstraints={{ right: 0, left: -2850 }} // Adjust as necessary
         >
           {data.map((item, index) => (
             <motion.div
