@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import Features from '../assets/Our Features Image.png';
-import ourvalue from '../assets/Our Values Image.png';
+import Features from '../../assets/Our Features Image.png';
+import ourvalue from '../../assets/Our Values Image.png';
 
 const Feature = () => {
   return (
     <>
-      <div className="flex flex-col items-center md:flex-row lg:w-[100rem] relative mx-auto">
-        <div className="lg:h-[50rem] lg:w-[50rem] h-auto w-auto py-20 px-5 gap-4 md:py-40">
+      <div className="flex flex-col md:flex-col lg:flex-row items-center lg:w-[110rem] relative mx-auto overflow-hidden ">
+        <div className="lg:h-[50rem] lg:w-[50rem] h-auto w-auto py-20 px-5 gap-4 md:py-40 lg:mx-7">
           <h3 className="text-3xl md:text-5xl py-2 md:py-5">Our Features</h3>
           <h1 className="text-4xl md:text-6xl font-bold py-2 md:py-5">The creative spark you need for your success</h1>
           <p className="text-lg md:text-2xl mx-4 md:mx-8 py-2 md:py-5">
@@ -21,14 +21,14 @@ const Feature = () => {
             </button>
           </div>
         </div>
-        <div className="lg:h-[50rem] lg:w-[50rem] h-40 w-60 md:h-auto md:w-auto md:ml-32">
-          <img src={Features} alt="Our Features" className="h-full w-full object-cover" />
+        <div className="lg:h-[50rem] lg:w-[55rem] h-56 w-80 sm:w-80 md:h-auto md:w-auto md:ml-32 md:mx-32  lg:mx-14 ">
+          <img src={Features} alt="Our Features" className="h-56 w-full object-cover  lg:h-full md:h-full " />
         </div>
       </div>
       
-      <div className="flex flex-col sm:flex-col-reverse items-center md:flex-row lg:w-[100rem] relative mx-auto mt-10">
-        <div className="lg:h-[50rem] lg:w-[50rem] h-40 w-60 md:h-auto md:w-auto md:mr-32">
-          <img src={ourvalue} alt="Our Values" className="h-full w-full object-cover" />
+      <div className="flex flex-col-reverse md:flex-col-reverse  items-center lg:w-[110rem] relative mx-auto mt-10 overflow-hidden lg:flex-row">
+        <div className="lg:h-[50rem] lg:w-[50rem] h-56 w-80 sm:w-80 md:h-auto md:w-auto md:mr-32 md:mx-32 lg:mx-7 ">
+          <img src={ourvalue} alt="Our Values" className="h-56 lg:h-full w-full object-cover md:h-full " />
         </div>
         <div className="lg:h-[50rem] lg:w-[50rem] h-auto w-auto py-20 px-5 gap-4 md:py-40">
           <h3 className="text-3xl md:text-5xl py-2 md:py-5">Our Values</h3>

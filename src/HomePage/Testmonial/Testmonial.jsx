@@ -1,22 +1,26 @@
+/* eslint-disable no-unused-vars */
 // eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 
 const testimonials = [
   {
-    quote: "Landwind is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
+    quote: "The best photography gear I have ever used. The clarity and precision are unmatched.",
     name: "Micheal Gough",
-    position: "CEO at Google"
+    position: "Photographer",
+    company: "Gough Photography"
   },
   {
-    quote: "This is an excellent product that has streamlined our workflow and improved our productivity significantly.",
+    quote: "This equipment has transformed my photography business. My clients love the results!",
     name: "Jane Doe",
-    position: "CTO at Amazon"
+    position: "Photographer",
+    company: "Doe Photography Studios"
   },
   {
-    quote: "Highly recommended for any business looking to enhance their digital presence with modern tools.",
+    quote: "Highly recommended for any photographer looking to take their work to the next level.",
     name: "John Smith",
-    position: "Head of Development at Facebook"
+    position: "Photographer",
+    company: "Smith Photography"
   }
 ];
 
@@ -42,10 +46,11 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <div className="slider-container max-w-[120rem] mx-auto bg-white py-16">
-      <h1 className="text-7xl font-bold text-center mb-8">What People Say</h1>
+    <div className="slider-container max-w-[120rem] mx-auto bg-[#ffffff] py-16 overflow-hidden">
+      <h1 className="lg:text-7xl text-3xl font-bold text-center mb-8">What People Say</h1>
       <div className="relative flex justify-center items-center">
-        <button onClick={handlePrev} className="absolute left-0 p-2 mx-10 text-7xl font-bold ">&larr;</button>
+        <button onClick={handlePrev} className="absolute left-0 p-2 text-7xl font-bold hidden sm:block lg:mx-44">&larr;</button>
+        
         <AnimatePresence mode='wait'>
           <motion.div
             key={currentIndex}
@@ -63,20 +68,21 @@ const Testimonial = () => {
                   fill="currentColor"></path>
               </svg>
               <blockquote>
-                <p className="text-xl font-medium text-gray-900 md:text-2xl">
+                <p className="lg:text-2xl text-xl font-medium text-gray-900 md:text-2xl">
                   {testimonials[currentIndex].quote}
                 </p>
               </blockquote>
               <figcaption className="flex items-center justify-center mt-6 space-x-3">
                 <div className="flex items-center divide-x-2 divide-gray-500">
-                  <div className="pr-3 font-medium text-gray-900">{testimonials[currentIndex].name}</div>
-                  <div className="pl-3 text-sm font-light text-gray-500">{testimonials[currentIndex].position}</div>
+                  <div className="pr-3 font-medium text-gray-900 lg:text-3xl text-lg">{testimonials[currentIndex].name}</div>
+                  <div className="pl-3 lg:text-xl text-sm font-light text-gray-700">{testimonials[currentIndex].position}</div>
                 </div>
               </figcaption>
             </figure>
           </motion.div>
         </AnimatePresence>
-        <button onClick={handleNext} className="absolute right-0 p-2 mx-10 text-7xl font-bold ">&rarr;</button>
+        
+        <button onClick={handleNext} className="absolute right-0 p-2 text-7xl font-bold hidden sm:block lg:mx-44">&rarr;</button>
       </div>
     </div>
   );

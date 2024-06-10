@@ -1,17 +1,17 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Fashion from "../assets/Fashion.png";
-import Lifestyle from "../assets/Lifestyle.png";
-import Wedding from "../assets/Wedding Photo.png";
-import WildLife from "../assets/sanctuary.png";
-import Sports from "../assets/sport-mode.png";
-import Products from "../assets/studio.png";
+import Fashion from "../../assets/Fashion.png";
+import Lifestyle from "../../assets/Lifestyle.png";
+import Wedding from "../../assets/Wedding Photo.png";
+import WildLife from "../../assets/sanctuary.png";
+import Sports from "../../assets/sport-mode.png";
+import Products from "../../assets/studio.png";
 import Feature from "./Feature";
 
 const Services = () => {
   return (
     <>
-      <div className="bg-red-50 px-2 py-12 text-[#333] max-w-[120rem] mx-auto">
+      <div className="bg-red-50 px-2 py-12 text-[#333] max-w-[120rem] mx-auto overflow-hidden">
         <div className="max-w-6xl mx-auto h-auto">
           <h2 className="sm:text-4xl text-2xl lg:text-7xl font-extrabold text-center mb-16">
             What we provide
@@ -65,7 +65,7 @@ const Services = () => {
               <div>
                 <h3 className="text-3xl font-semibold mb-2">Wildlife Photo</h3>
                 <p className="text-gray-500 text-lg">
-                  Wildlife photography services capturing nature's beauty.
+                  Wildlife photography services capturing nature beauty.
                 </p>
               </div>
             </div>

@@ -2,22 +2,22 @@
   {
     "name": "Emily Johnson",
     "profession": "Wedding Photographer",
-    "image_url": "/assets/Profile1.png"
+    "image_url": "./assets/Profile1.png"
   },
   {
     "name": "Michael Smith",
     "profession": "Wildlife Photographer",
-    "image_url": "/assets/Profile2.png"
+    "image_url": "./assets/Profile2.png"
   },
   {
     "name": "Sophia Lee",
     "profession": "Portrait Photographer",
-    "image_url": "/assets/Profile3.png"
+    "image_url": "./assets/Profile3.png"
   },
   {
     "name": "Daniel Brown",
     "profession": "Fashion Photographer",
-    "image_url": "/assets/Profile4.png"
+    "image_url": "./assets/Profile4.png"
   },
   {
     "name": "Olivia Garcia",
