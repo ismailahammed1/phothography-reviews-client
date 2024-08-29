@@ -84,7 +84,7 @@ function Banner() {
           </AnimatePresence>
     </div>
     <div className="text-white mt-8 sm:mt-0 sm:ml-20 text-center sm:text-left ">
-            <AnimatePresence>
+  
               {isVisible && (
                 <motion.div
                   initial={{ x: "200%" }}
@@ -96,8 +96,8 @@ function Banner() {
                   <h1 className="lg:text-7xl md:text-3xl text-xl ">HI,</h1>
                 </motion.div>
               )}
-            </AnimatePresence>
-            <AnimatePresence>
+         
+    
               {isVisible && (
                 <motion.div
                   initial={{ x: "200%", opacity: 0 }}
@@ -109,8 +109,8 @@ function Banner() {
                   <h1 className="lg:text-7xl md:text-4xl text-xl ">I’m Jacobson!</h1>
                 </motion.div>
               )}
-            </AnimatePresence>
-            <AnimatePresence>
+        
+         
               {isVisible && (
                 <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -124,7 +124,7 @@ function Banner() {
                   </p>
                 </motion.div>
               )}
-            </AnimatePresence>
+       
           </div>
 </div>
 

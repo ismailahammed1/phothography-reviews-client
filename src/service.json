@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Wedding Photo",
+    "service_id": 1,
+    "image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1724360019/photography%20website/e5388d79-4976-441d-ad84-2772a27ff235.png",
+    "logo": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1724442940/photography%20website/Wedding_Photo_zn47xv.png",
+    "description": "We also like to fix the place for your amazing photos.",
+    "price": "$2,000 - $3,500",
+    "working_hours": "9 AM - 6 PM",
+    "rating": 4.9
+  },
+  {
+    "title": "Lifestyle Photo",
+    "service_id": 3,
+    "image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1724359025/photography%20website/ea376974-1b79-40cc-83b3-9bb8b29b70d7.png",
+    "logo": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1724442941/photography%20website/Lifestyle_mgfewv.png",
+    "description": "We are here to take photos of your beautiful event.",
+    "price": "$1,200 - $2,000",
+    "working_hours": "10 AM - 7 PM",
+    "rating": 4.8
+  },
+  {
+    "title": "Fashion Photo",
+    "service_id": 4,
+    "image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1724359182/photography%20website/cf75af0f-dda2-48ac-9fbd-5830a3f24098.png",
+    "logo": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1724442941/photography%20website/Fashion_acbhhm.png",
+    "description": "You will keep the memories forever in an album.",
+    "price": "$2,500 - $4,000",
+    "working_hours": "11 AM - 8 PM",
+    "rating": 4.6
+  },
+  {
+    "title": "Wildlife Photo",
+    "service_id": 2,
+    "image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1724358969/photography%20website/e4b074f2-a93e-4f75-9c79-fcde12a9bdf3.png",
+    "logo": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1724442941/photography%20website/studio_ku81ek.png",
+    "description": "Wildlife photography services capturing nature beauty.",
+    "price": "$1,500 - $2,800",
+    "working_hours": "7 AM - 5 PM",
+    "rating": 4.7
+  },
+  {
+    "title": "Sports Photo",
+    "service_id": 5,
+    "image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1724359288/photography%20website/006e252e-5295-45ac-88a4-02c999edcb40.png",
+    "logo": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1724442941/photography%20website/sport-mode_ytekgy.png",
+    "description": "Professional sports photography capturing every thrilling moment.",
+    "price": "$1,800 - $3,200",
+    "working_hours": "8 AM - 6 PM",
+    "rating": 4.7
+  },
+  {
+    "title": "Products Photo",
+    "service_id": 7,
+    "image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1724360225/photography%20website/2abbfccb-9684-4d23-bc45-2910d7d92c5b.png",
+    "logo": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1724442941/photography%20website/sanctuary_aogdty.png",
+    "description": "High-quality product photography showcasing your items perfectly.",
+    "price": "$1,000 - $2,500",
+    "working_hours": "10 AM - 6 PM",
+    "rating": 4.7
+  }
+]
