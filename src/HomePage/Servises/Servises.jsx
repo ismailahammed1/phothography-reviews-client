@@ -6,24 +6,40 @@ import { Link } from "react-router-dom";
 import Feature from "./Feature";
 import ImageGrid from "./ImageGrid";
 
-
-
 const Services = () => {
-  
-  const [services, setSerives]=useState([])
+  const [services, setServices] = useState([]);
 
-  useEffect(()=>{
-    fetch('/src/service.json')
-    .then(res=>res.json())
-    .then(data=>
-      setSerives(data)
-  )
-  },[])
-  
+  useEffect(() => {
+    fetch('http://localhost:5000/services')
+      .then(res => {
+        if (!res.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return res.json();
+      })
+      .then(data => setServices(data))
+      .catch(error => console.error('Fetch error:', error));
+  }, []);
+
   const { ref, inView } = useInView({
-    triggerOnce: true, 
-    threshold: 0.2 
+    triggerOnce: true,
+    threshold: 0.2
   });
+
+  const buttonAnimation = {
+    initial: { opacity: 0, scale: 0.5 },
+    animate: inView ? { opacity: 1, scale: 1 } : {},
+    transition: {
+      duration: 0.3,
+      ease: [0, 0.71, 0.2, 1.01],
+      scale: {
+        type: "spring",
+        damping: 5,
+        stiffness: 100,
+        restDelta: 0.001
+      }
+    }
+  };
 
   return (
     <>
@@ -60,29 +76,17 @@ const Services = () => {
           </div>
           <div className="flex justify-center m-10">
             <motion.button
-                    
-                      initial={{ opacity: 0, scale: 0.5 }}
-                      animate={inView ? { opacity: 1, scale: 1 } : {}}
-                      transition={{
-                        duration: 0.3,
-                        ease: [0, 0.71, 0.2, 1.01],
-                        scale: {
-                          type: "spring",
-                          damping: 5,
-                          stiffness: 100,
-                          restDelta: 0.001
-                        }
-                      }}
+              {...buttonAnimation}
               className="bg-transparent text-black font-semibold py-2 px-4 border border-black hover:bg-slate-400 rounded tracking-wide text-2xl w-80"
             >
-             <Link to="/services">Get Started Now</Link>
+              <Link to="/services">Explore Our Services</Link>
             </motion.button>
           </div>
         </div>
-        <Feature className="mb-16"  />
-        <div className=" mt-20">
-      <ImageGrid/>
-      </div>
+        <Feature className="mb-16" />
+        <div className="mt-20">
+          <ImageGrid />
+        </div>
       </div>
     </>
   );

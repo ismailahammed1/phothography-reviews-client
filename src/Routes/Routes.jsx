@@ -17,6 +17,10 @@ const routes = createBrowserRouter([
       {
         path: '/services',
         element: <ServicesPage />,
+        loader:()=>fetch(`http://localhost:5000/services`),
+        children: [
+       
+        ],
       },
       {
         path: '/login',
