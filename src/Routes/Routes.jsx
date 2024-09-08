@@ -18,14 +18,12 @@ const routes = createBrowserRouter([
       {
         path: '/services',
         element: <ServicesPage />,
-        loader:()=>fetch(`http://localhost:5000/services`),
-        children: [
-          {
-            path: '/services/:serviceId/reviews',
-            element: <Review />,
-            loader: ({ params }) => fetch(`http://localhost:5000/services/${params.serviceId}`), 
-          },
-        ],
+        loader: () => fetch(`http://localhost:5000/services`),
+      },
+      {
+        path: '/services/reviews/:id', // Match this with the Link path
+        element: <Review />,
+        loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
       },
       {
         path: '/login',
@@ -35,9 +33,10 @@ const routes = createBrowserRouter([
         path: '/signup',
         element: <Signup />,
       },
-    
     ],
   },
 ]);
+
+
 
 export default routes;
